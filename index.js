@@ -342,6 +342,10 @@ class Concert extends Performance {
 class Vocalist {
 	#name;
 	#band;
+	constructor(name, band) {
+		this.#name = name;
+		this.#band = band;
+	}
 	get name () {
 		return this.#name;
 	};
@@ -407,9 +411,11 @@ class SongWriter {
  */
 
 class LeadSinger extends Vocalist {
-	constructor(name, band){
+	
+	constructor(name, band){			
 		super (name, band);
 	}
+	
   // Створюємо конструктор з двома вхідними параметрами: name, band
   // super(name, band);
 }
